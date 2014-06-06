@@ -1,0 +1,39 @@
+%h1 Listing campaigns
+
+%table
+  %tr
+    %th Source
+    %th Title
+    %th Location
+    %th Lat
+    %th Lng
+    %th Desc
+    %th Img
+    %th Token
+    %th Email
+    %th Fname
+    %th Lname
+    %th
+    %th
+    %th
+
+  - @campaigns.each do |campaign|
+    %tr
+      %td= campaign.source
+      %td= campaign.title
+      %td= campaign.location
+      %td= campaign.lat
+      %td= campaign.lng
+      %td= campaign.desc
+      %td= campaign.img
+      %td= campaign.token
+      %td= campaign.email
+      %td= campaign.fname
+      %td= campaign.lname
+      %td= link_to 'Show', campaign
+      %td= link_to 'Edit', edit_campaign_path(campaign)
+      %td= link_to 'Destroy', campaign, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Campaign', new_campaign_path

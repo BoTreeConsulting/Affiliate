@@ -1,0 +1,39 @@
+%p#notice= notice
+
+%p
+  %b Source:
+  = @campaign.source
+%p
+  %b Title:
+  = @campaign.title
+%p
+  %b Location:
+  = @campaign.location
+%p
+  %b Lat:
+  = @campaign.lat
+%p
+  %b Lng:
+  = @campaign.lng
+%p
+  %b Desc:
+  = @campaign.desc
+%p
+  %b Img:
+  = @campaign.img
+%p
+  %b Token:
+  = @campaign.token
+%p
+  %b Email:
+  = @campaign.email
+%p
+  %b Fname:
+  = @campaign.fname
+%p
+  %b Lname:
+  = @campaign.lname
+
+= link_to 'Edit', edit_campaign_path(@campaign)
+\|
+= link_to 'Back', campaigns_path
