@@ -1,47 +1,92 @@
-%h1 Advowire - Affiliate Demo
-%h2#item
 - @campaign = Campaign.new
 = form_tag '/' do |f|
-  - if @campaign.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@campaign.errors.count, "error")} prohibited this campaign from being saved:"
-      %ul
-        - @campaign.errors.full_messages.each do |msg|
-          %li= msg
+  .affiliateDemoPageBg
+    .affiliateDemoPage
+      %h2 Advowire - Affiliate Demo
+      .formSection
+        .formDetail.floatLeft
+          %p
+            %label Source:
+            = text_field_tag :source, 'http://www.trulia.com/property/3125617971-25-Columbus-Cir-PH78-New-York-NY-10019'
+          %p
+            %label Title:
+            = text_field_tag :title, '25 Columbus Cir'
+          %p
+            %label Location:
+            = text_field_tag :location, 'Fort Collins, CO, United States'
+          %p
+            %label Lat:
+            = text_field_tag :lat, 40.5852602
+          %p
+            %label Lng:
+            = text_field_tag :lng, -105.084423
+        .formDetail.floatRight
+          %p
+            %label Image:
+            = text_field_tag :img, 'http://thumbs.trulia-cdn.com/pictures/thumbs_5/ps.62/c/9/e/1/picture-uh=5a407b77585ab12cbeb56d0122cb25c-ps=c9e13d9645505f2c61d760ca8599253-25-Columbus-Cir-PH78-New-York-NY-10019.jpg'
+          %p
+            %label First Name:
+            = text_field_tag :fname, 'Amit'
+          %p
+            %label Last Name:
+            = text_field_tag :lname, 'Patel'
+          %p
+            %label Email:
+            = text_field_tag :email, 'priyam@gmail.com'
+          %p
+            %label Token:
+            = text_field_tag :token, 'e4bd84de60e323115a107e26e0bb2904'
+        .textAreaSecton
+          %label Desc:
+          = text_area_tag :desc, 'This penthouse is the largest full floor penthouse with over 8,000 square feet on the highest floor available on the market and can be occupied immediately, not years from now.'
+          %a.campaignGreenBgButton.floatLeft
+          #item
+        .clear
 
-  .field
-    = label_tag :source
-    = text_field_tag :source, 'http://www.trulia.com/property/3125617971-25-Columbus-Cir-PH78-New-York-NY-10019'
-  .field
-    = label_tag :title
-    = text_field_tag :title, '25 Columbus Cir'
-  .field
-    = label_tag :location
-    = text_field_tag :location, 'Fort Collins, CO, United States'
-  .field
-    = label_tag :lat
-    = text_field_tag :lat, 40.5852602
-  .field
-    = label_tag :lng
-    = text_field_tag :lng, -105.084423
-  .field
-    = label_tag :desc
-    = text_area_tag :desc, 'This penthouse is the largest full floor penthouse with over 8,000 square feet on the highest floor available on the market and can be occupied immediately, not years from now.', rows: 10, cols: 50
-  .field
-    = label_tag :img
-    = text_field_tag :img, 'http://thumbs.trulia-cdn.com/pictures/thumbs_5/ps.62/c/9/e/1/picture-uh=5a407b77585ab12cbeb56d0122cb25c-ps=c9e13d9645505f2c61d760ca8599253-25-Columbus-Cir-PH78-New-York-NY-10019.jpg'
-  .field
-    = label_tag :token
-    = text_field_tag :token, 'e4bd84de60e323115a107e26e0bb2904'
-  .field
-    = label_tag :email
-    = text_field_tag :email, 'priyam@gmail.com'
-  .field
-    = label_tag :fname
-    = text_field_tag :fname, 'Amit'
-  .field
-    = label_tag :lname
-    = text_field_tag :lname, 'Patel'
+  -#%h1 Advowire - Affiliate Demo
+  -#%h2#item
+  -#- @campaign = Campaign.new
+  -#= form_tag '/' do |f|
+    - if @campaign.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@campaign.errors.count, "error")} prohibited this campaign from being saved:"
+        %ul
+          - @campaign.errors.full_messages.each do |msg|
+            %li= msg
+
+    .field
+      = label_tag :source
+      = text_field_tag :source, 'http://www.trulia.com/property/3125617971-25-Columbus-Cir-PH78-New-York-NY-10019'
+    .field
+      = label_tag :title
+      = text_field_tag :title, '25 Columbus Cir'
+    .field
+      = label_tag :location
+      = text_field_tag :location, 'Fort Collins, CO, United States'
+    .field
+      = label_tag :lat
+      = text_field_tag :lat, 40.5852602
+    .field
+      = label_tag :lng
+      = text_field_tag :lng, -105.084423
+    .field
+      = label_tag :desc
+      = text_area_tag :desc, 'This penthouse is the largest full floor penthouse with over 8,000 square feet on the highest floor available on the market and can be occupied immediately, not years from now.', rows: 10, cols: 50
+    .field
+      = label_tag :img
+      = text_field_tag :img, 'http://thumbs.trulia-cdn.com/pictures/thumbs_5/ps.62/c/9/e/1/picture-uh=5a407b77585ab12cbeb56d0122cb25c-ps=c9e13d9645505f2c61d760ca8599253-25-Columbus-Cir-PH78-New-York-NY-10019.jpg'
+    .field
+      = label_tag :token
+      = text_field_tag :token, 'e4bd84de60e323115a107e26e0bb2904'
+    .field
+      = label_tag :email
+      = text_field_tag :email, 'priyam@gmail.com'
+    .field
+      = label_tag :fname
+      = text_field_tag :fname, 'Amit'
+    .field
+      = label_tag :lname
+      = text_field_tag :lname, 'Patel'
 
 :javascript
   var params = { source: 'http://www.trulia.com/property/3125617971-25-Columbus-Cir-PH78-New-York-NY-10019',
