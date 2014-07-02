@@ -1,23 +1,5 @@
-
-/**********************NOT NEED TO ADD THIS CSS**********************/
-body{ margin:0; padding:0; font-family:Arial, Helvetica, sans-serif;}
-.clear { clear:both; }
-.floatLeft { float:left!important;}
-.floatRight { float:right!important;}
-
-/**********************NOT NEED TO ADD THIS CSS**********************/
-
-/**********************Affiliate Demo Page CSS Here Start**********************/
-.affiliateDemoPageBg { background: url(/assets/body-bg.jpg); padding:50px 0;}
-.affiliateDemoPage { margin:50px auto; width:950px; padding:20px; background:#fff; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; color:#000; font-size:14px; font-family:Arial, Helvetica, sans-serif;}
-.affiliateDemoPage h2 { margin:0 0 20px 0; padding:0 0 10px 0; font-size:14px; text-transform:uppercase; font-weight:bold; border-bottom:#d3d3d3 solid 1px; }
-.affiliateDemoPage .formSection { padding:0 40px;}
-.affiliateDemoPage .formSection .formDetail { width:365px; display:block; }
-.affiliateDemoPage .formSection .formDetail p { margin:0; padding:0 0 15px 0; float:left;} 
-.affiliateDemoPage .formSection .formDetail p label { width:130px; float:left; font-weight:bold; line-height:26px;  }
-.affiliateDemoPage .formSection .formDetail p input[type="text"] { width:220px; border-color: #87888A #E1E1E1 #E1E1E1 #A3A7AA; border-style: solid; border-width: 1px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; color: #383737; float: left; font-size: 13px; font-weight: normal; height: 26px; line-height: 26px; padding: 0 5px; }
-.affiliateDemoPage .formSection .textAreaSecton { margin:0; width:870px; float:left;}
-.affiliateDemoPage .formSection .textAreaSecton label { font-size:14px; font-weight:bold; padding-bottom:10px; float:left; }
-.affiliateDemoPage .formSection .textAreaSecton textarea { margin-bottom:20px; width:855px; border-color: #87888A #E1E1E1 #E1E1E1 #A3A7AA; border-style: solid; border-width: 1px; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; color: #383737; float: left; font-size: 13px; font-weight: normal; height:80px; line-height:20px; padding: 0 5px; }
-#item { margin:0;  float:left;}
-#item a { font-family:Arial, Helvetica, sans-serif; background:#23B14D; border:none; border-radius: 5px; font-size: 12px; font-weight: bold; padding:7px 25px; line-height:16px; text-align: center; text-decoration: none; display:inline-block; cursor:pointer; text-transform:none; color:#fff; text-decoration:none; }
+body { margin:0; padding:0 0 20px 0; background:#e9eaec url(/assets/bg.jpg) left top repeat-x;}
+.container { margin:0 auto; width:1150px; background:url(/assets/mainbg.jpg) center top no-repeat; min-height:1800px; position:relative;}
+.promoteButtonBox { position:absolute; top:250px; right:30px;}
+.promoteButtonBox a { background: url(/assets/promote_btn.jpg) left top no-repeat; border:none; width:116px; height:37px; cursor:pointer; display:block; text-indent:-999999; color:#fff; text-align:right; font-family:Arial, Helvetica, sans-serif; text-decoration:none; font-size:14px; font-weight:normal; padding-right:15px; line-height:37px; }
+.bigImgBox { position:absolute; top:517px; left:135px;}

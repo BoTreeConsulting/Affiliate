@@ -1,105 +1,21 @@
-- @campaign = Campaign.new
-= form_tag '/' do |f|
-  .affiliateDemoPageBg
-    .affiliateDemoPage
-      %h2 Advowire - Affiliate Demo
-      .formSection
-        .formDetail.floatLeft
-          %p
-            %label Source:
-            = text_field_tag :source, 'http://www.trulia.com/property/3125617971-25-Columbus-Cir-PH78-New-York-NY-10019'
-          %p
-            %label Title:
-            = text_field_tag :title, '25 Columbus Cir'
-          %p
-            %label Location:
-            = text_field_tag :location, 'Fort Collins, CO, United States'
-          %p
-            %label Lat:
-            = text_field_tag :lat, 40.5852602
-          %p
-            %label Lng:
-            = text_field_tag :lng, -105.084423
-        .formDetail.floatRight
-          %p
-            %label Image:
-            = text_field_tag :img, 'http://thumbs.trulia-cdn.com/pictures/thumbs_5/ps.62/c/9/e/1/picture-uh=5a407b77585ab12cbeb56d0122cb25c-ps=c9e13d9645505f2c61d760ca8599253-25-Columbus-Cir-PH78-New-York-NY-10019.jpg'
-          %p
-            %label First Name:
-            = text_field_tag :fname, 'Amit'
-          %p
-            %label Last Name:
-            = text_field_tag :lname, 'Patel'
-          %p
-            %label Email:
-            = text_field_tag :email, 'priyam@gmail.com'
-          %p
-            %label Token:
-            = text_field_tag :token, 'fed64d0659b90ab8fab974f6ee6ca7ca'
-        .textAreaSecton
-          %label Desc:
-          = text_area_tag :desc, 'This penthouse is the largest full floor penthouse with over 8,000 square feet on the highest floor available on the market and can be occupied immediately, not years from now.'
-          %a.campaignGreenBgButton.floatLeft
-          #item
-        .clear
-
-  -#%h1 Advowire - Affiliate Demo
-  -#%h2#item
-  -#- @campaign = Campaign.new
-  -#= form_tag '/' do |f|
-    - if @campaign.errors.any?
-      #error_explanation
-        %h2= "#{pluralize(@campaign.errors.count, "error")} prohibited this campaign from being saved:"
-        %ul
-          - @campaign.errors.full_messages.each do |msg|
-            %li= msg
-
-    .field
-      = label_tag :source
-      = text_field_tag :source, 'http://www.trulia.com/property/3125617971-25-Columbus-Cir-PH78-New-York-NY-10019'
-    .field
-      = label_tag :title
-      = text_field_tag :title, '25 Columbus Cir'
-    .field
-      = label_tag :location
-      = text_field_tag :location, 'Fort Collins, CO, United States'
-    .field
-      = label_tag :lat
-      = text_field_tag :lat, 40.5852602
-    .field
-      = label_tag :lng
-      = text_field_tag :lng, -105.084423
-    .field
-      = label_tag :desc
-      = text_area_tag :desc, 'This penthouse is the largest full floor penthouse with over 8,000 square feet on the highest floor available on the market and can be occupied immediately, not years from now.', rows: 10, cols: 50
-    .field
-      = label_tag :img
-      = text_field_tag :img, 'http://thumbs.trulia-cdn.com/pictures/thumbs_5/ps.62/c/9/e/1/picture-uh=5a407b77585ab12cbeb56d0122cb25c-ps=c9e13d9645505f2c61d760ca8599253-25-Columbus-Cir-PH78-New-York-NY-10019.jpg'
-    .field
-      = label_tag :token
-      = text_field_tag :token, 'fed64d0659b90ab8fab974f6ee6ca7ca'
-    .field
-      = label_tag :email
-      = text_field_tag :email, 'priyam@gmail.com'
-    .field
-      = label_tag :fname
-      = text_field_tag :fname, 'Amit'
-    .field
-      = label_tag :lname
-      = text_field_tag :lname, 'Patel'
+.container
+  .promoteButtonBox#item
+  .bigImgBox
+    = image_tag 'HI-img.jpg'
+    -#%img{alt: "", height: "445", src: "/assets/images/HI-img.jpg", width: "593"}/
 
 :javascript
-  var params = { source: 'http://www.trulia.com/property/3125617971-25-Columbus-Cir-PH78-New-York-NY-10019',
-  title: '25 Columbus Cir',
-  location: 'Fort Collins, CO, United States',
-  lat: '10',
-  lng: '20',
-   desc: 'This penthouse is the largest full floor penthouse with over 8,000 square feet on the highest floor available on the market and can be occupied immediately, not years from now.',
-   img: 'http://thumbs.trulia-cdn.com/pictures/thumbs_5/ps.62/c/9/e/1/picture-uh=5a407b77585ab12cbeb56d0122cb25c-ps=c9e13d9645505f2c61d760ca8599253-25-Columbus-Cir-PH78-New-York-NY-10019.jpg',
-   token: 'fed64d0659b90ab8fab974f6ee6ca7ca',
-   email: 'priyam@gmail.com',
-   fname: 'Priyam',
-   lname: 'Patel'
+  var params = { source: 'http://www.advowire.com',
+  title: 'Please help reach our goal of $1,500,000!',
+  location: '',
+  lat: '',
+  lng: '',
+   desc: 'We are raising funds for . Please help reach our goal of $1,500,000!',
+   img: 'http://radiant-meadow-4881.herokuapp.com/assets/advowire-campaign.jpg',
+   token: 'ca6399be4dd55f17c7367ca540300381',
+   email: 'jason@hireinfluence.com',
+   fname: 'Jason',
+   lname: 'Pampell'
    }
   var p1 = new AdvoWireAffiliate('item', params);
 
