@@ -5,7 +5,7 @@
     -#%img{alt: "", height: "445", src: "/assets/images/HI-img.jpg", width: "593"}/
 
 :javascript
-  var params = { auth_mode: 'in', source: 'http://www.advowire.com',
+  var params = { auth_mode: 'in', source: '#{@params[:source]}',
   title: '#{@params[:title]}',
   location: '#{@params[:location]}',
   lat: '#{@params[:lat]}',
@@ -14,7 +14,7 @@
   img: '#{@params[:img]}',
   token: '99124566b0a9ef8ab914567d98824919',
   email: '#{@params[:email]}',
- fname: 'Jason',
+   fname: 'Jason',
    lname: 'Pampell',
    }
   var p1 = new AdvoWireAffiliate('item', params);
