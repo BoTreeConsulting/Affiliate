@@ -5,17 +5,17 @@
     -#%img{alt: "", height: "445", src: "/assets/images/HI-img.jpg", width: "593"}/
 
 :javascript
-  var params = { source: 'http://www.advowire.com',
-  title: 'We are raising funds for HireInfluence',
-  location: '',
-  lat: '',
-  lng: '',
-   desc: 'We are raising funds for HireInfluence. Please help reach our goal of $1,500,000!',
-   img: 'http://radiant-meadow-4881.herokuapp.com/assets/advowire-campaign.jpg',
-   token: '9aedaecc783402500221fccbb54a6b23',
-   email: 'jason@hireinfluence.com',
-   fname: 'Jason',
-   lname: 'Pampell'
+  var params = { auth_mode: 'in', source: 'http://www.advowire.com',
+  title: '#{@params[:title]}',
+  location: '#{@params[:location]}',
+  lat: '#{@params[:lat]}',
+  lng: '#{@params[:lng]}',
+  desc: '#{@params[:desc]}',
+  img: '#{@params[:img]}',
+  token: '99124566b0a9ef8ab914567d98824919',
+  email: '#{@params[:email]}',
+ fname: 'Jason',
+   lname: 'Pampell',
    }
   var p1 = new AdvoWireAffiliate('item', params);
 
