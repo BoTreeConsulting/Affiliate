@@ -1,5 +1,5 @@
 body { margin:0; padding:0 0 20px 0; background:#e9eaec url(/assets/bg.jpg) left top repeat-x;}
 .container { margin:0 auto; width:1150px; background:url(/assets/mainbg.jpg) center top no-repeat; min-height:1800px; position:relative;}
 .promoteButtonBox { position:absolute; top:250px; right:30px;}
-.promoteButtonBox a { background: url(/assets/promote_btn.jpg) left top no-repeat; border:none; width:116px; height:37px; cursor:pointer; display:block; text-indent:-999999; color:#fff; text-align:right; font-family:Arial, Helvetica, sans-serif; text-decoration:none; font-size:14px; font-weight:normal; padding-right:15px; line-height:37px; }
+.promoteButtonBox a { background: url(/assets/promote_btn.png) left top no-repeat; border:none; width:116px; height:37px; cursor:pointer; display:block; text-indent:-999999; color:#fff; text-align:right; font-family:Arial, Helvetica, sans-serif; text-decoration:none; font-size:14px; font-weight:normal; padding-right:15px; line-height:37px; }
 .bigImgBox { position:absolute; top:517px; left:135px;}
