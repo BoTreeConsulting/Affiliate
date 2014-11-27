@@ -1,8 +1,7 @@
 .container
   .promoteButtonBox#item
   .bigImgBox
-    = image_tag 'HI-img.jpg'
-    -#%img{alt: "", height: "445", src: "/assets/images/HI-img.jpg", width: "593"}/
+    = image_tag 'HI-img.jpg', height: '445', width: '593'
 
 :javascript
   var params = { auth_mode: 'in', source: '#{@params[:source]}',
