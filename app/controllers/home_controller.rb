@@ -49,7 +49,7 @@ class HomeController < ApplicationController
           location: 'New York, NY, United States',
           lat: '40.7127837',
           lng: '-74.0059413',
-          desc: 'We are raising funds for HireInfluence. Please help reach our goal of $1,500,000!',
+          desc: 'We are raising funds for "Centered" our Yoga and Fitness App.',
           img: 'http://radiant-meadow-4881.herokuapp.com/assets/advowire-campaign.jpg',
           email: 'jason@hireinfluence.com'
         }
