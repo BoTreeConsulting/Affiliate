@@ -44,7 +44,7 @@ class HomeController < ApplicationController
 
       else
         {
-          source: 'http://www.advowire.com',
+          source: 'http://www.centered.com',
           title: 'We are raising funds for HireInfluence',
           location: 'New York, NY, United States',
           lat: '40.7127837',
