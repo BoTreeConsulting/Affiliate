@@ -50,7 +50,7 @@ class HomeController < ApplicationController
           lat: '40.7127837',
           lng: '-74.0059413',
           desc: 'We are raising funds for "Centered" our Yoga and Fitness App.',
-          img: 'http://radiant-meadow-4881.herokuapp.com/assets/advowire-campaign.jpg',
+          img: 'http://serene-everglades-3138.herokuapp.com/assets/HiRes.jpg',
           email: 'jason@hireinfluence.com'
         }
     end
